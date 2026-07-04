@@ -1,0 +1,14 @@
+.ruff_cache/
+adapter/
+agent_dataset/
+build/
+daneel.egg-info/
+weights/
+.python-version
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+eval_logs/
+.vscode/
+.claude/

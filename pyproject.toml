@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daneel"
+version = "0.1.0"
+description = "LoRA fine-tuning, validation, and inference for a Qwen2.5 agent adapter"
+requires-python = ">=3.13"
+dynamic = ["dependencies"]
+
+[project.scripts]
+daneel = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "device", "inference", "model", "dataset", "training", "validation"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
